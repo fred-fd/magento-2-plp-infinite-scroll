@@ -23,7 +23,7 @@ Before you continue, ensure you meet the following requirements:
 ### Step 1 : Download Magento 2 Infinitescroll Extension
 
 #### Install via app/code 
-Extract the extension from fmah_plpinfinitescroll.tar.gz
+Extract the extension from freddev_plpinfinitescroll.tar.gz
 
 Create Dir vendor Freddev in app/code/
 
@@ -51,7 +51,7 @@ php bin/magento cache:clean
 
   `Login to Magento admin > Stores > Configuration > FMAH EXTENSIONS > PLP Infinite Scroll > Enable > Choose Yes to enable the module.`
   
-   In `Stores > Configuration > FMAH EXTENSIONS > PLP Infinite Scroll` we set: 
+   In `Stores > Configuration > FREDDEV EXTENSIONS > PLP Infinite Scroll` we set: 
    * **Delay (ms)**: Delay time for the scroll down, default 600.
    * **Content**: Select for the elements that surrounds the items you will be loading more of (For Ex. = .classname/#id).
    * **Pagination**: Select class, id for paging loaded more.
