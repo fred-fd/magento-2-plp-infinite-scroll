@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <tab id="freddev" translate="label" sortOrder="10">
+            <label>Freddev Extensions</label>
+        </tab>
+        <section id="plpinfinitescroll" translate="label" sortOrder="130" showInDefault="1" showInWebsite="1" showInStore="1">
+            <class>separator-top</class>
+            <label>PLP Infinite Scroll</label>
+            <tab>fmah</tab>
+            <resource>Freddev_PdpCustomText::pdpcustomtext_config</resource>
+            <group id="general" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>General</label>
+                <field id="enable" translate="label" type="select" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Infinite Scroll Enable</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="container_selector" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Container selector</label>
+                    <comment>ej: .main</comment>
+                </field>
+                <field id="item_selector" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Item selector</label>
+                    <comment>ej: .product-item</comment>
+                </field>
+                <field id="next" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Next selector</label>
+                    <comment>ej: .next</comment>
+                </field>
+                <field id="paginator" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Paginator selector</label>
+                    <comment>ej: .pages-items, .pager__list</comment>
+                </field>
+                <field id="delay" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Delay</label>
+                    <comment>ej: 600</comment>
+                </field>
+                <field id="memory" translate="label" type="select" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Memory Enable</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>

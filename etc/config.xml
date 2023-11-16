@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <plpinfinitescroll>
+            <general>
+                <enable>1</enable>
+                <container_selector>.products.list.items.product-items</container_selector>
+                <item_selector>.product-item</item_selector>
+                <next>.next</next>
+                <paginator>.pages-items, .pager__list</paginator>
+                <delay>600</delay>
+                <memory>1</memory>
+            </general>
+        </plpinfinitescroll>
+    </default>
+</config>

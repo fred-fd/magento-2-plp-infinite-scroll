@@ -1,0 +1,25 @@
+<?php
+/**
+ * \Freddev\PlpInfiniteScroll\Block\Index
+ */
+if ($block->isModuleEnable()):
+?>
+<script>
+window.plpisConfig = {
+    container: '<?php echo $block->escapeHtml($block->getConfigValue('container_selector')); ?>',
+    item: '<?php echo $block->escapeHtml($block->getConfigValue('item_selector')); ?>',
+    next: '<?php echo $block->escapeHtml($block->getConfigValue('next')); ?>',
+    paginator: '<?php echo $block->escapeHtml($block->getConfigValue('paginator')); ?>',
+    delay: '<?php echo $block->escapeHtml($block->getConfigValue('delay')); ?>',
+    memory: '<?php echo $block->escapeHtml($block->getConfigValue('memory')) ? 'true' : 'false'; ?>'
+};
+require(['jquery', 'plpinfinitescroll'],
+    function($) {
+        $(function($) {
+            $('body').trigger('infinitescrollready');
+        });
+    });
+</script>
+<?php
+endif;
+?>
